@@ -104,10 +104,10 @@ $(document).ready( function () {
 				apparelSelection += "<br>";
 				apparelSelection += "<span class='cost'>"+cost+"</span>";
 				apparelSelection += "<div class='likeButtonOne broken'>";
-				apparelSelection += "<img src='../img/redHeart.png'>";
+				apparelSelection += "<img src='redHeart.png'>";
 				apparelSelection += "</div>";
 				apparelSelection += "<div class='likeButtonTwo fixed fHeart'>";
-				apparelSelection += "<img src='../img/redHeart.png'>";
+				apparelSelection += "<img src='redHeart.png'>";
 				apparelSelection += "</div>";
 				apparelSelection += "</div>";
 			}		
