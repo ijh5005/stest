@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sew & So</title>
+	<link rel="icon" type="png" href="titlepic.ico" />
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<div id="banner">
+			<h1>Apparel</h1>
+			<nav>
+				<div class="nav activePage">Homepage</div>
+				<div class="nav"><a href="index.html">Apparel</a></div>
+				<div class="nav"><a href="#">Bags</a></div>
+				<div class="nav"><a href="#">How To Videos</a></div>
+				<div class="nav menu">
+					<a href="#">Menu</a>
+					<div class="menuList">
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Location</a></li>
+						</ul>
+						<div id="menuToggleBox"></div>
+					</div>
+				</div>
+			</nav>
+			<div id="shoppingCart">
+				<img src="bag.png">
+				<div id="count"></div>
+			</div>
+		</div>
+		
+	</header>
+	<container id="gallery">
+		
+		<div id="itemMenu"></div>
+
+			<div id="exitTarget"></div>
+
+
+			<div class="itemContainer">	
+				
+			    <div class="itemDisplay">
+
+				    <div class="options">
+				    	<div class="apparelPicCont0">
+				    		<img src="" class="apparelPic">
+			    		</div>
+				    	<div class="apparelPicCont1">
+				    		<img src="" class="apparelPic">
+			    		</div>
+				    	<div class="apparelPicCont2">
+				    		<img src="" class="apparelPic">
+			    		</div>
+				    	<div class="apparelPicCont3">
+				    		<img src="" class="apparelPic">
+			    		</div>
+				    	<div class="apparelPicCont4">
+				    		<img src="" class="apparelPic">
+			    		</div>
+				    	<div class="apparelPicCont5">
+				    		<img src="" class="apparelPic">
+			    		</div>
+				    </div>
+				    
+				    <div class="img"><img src=""></div>
+
+				    <div class="clear">
+				    	<span class="itemDscrpt">
+				    		As the temperatures warm from the runway to the red carpet, we're getting inspired by the season's hottest trends. Get it while it's still here! by Brittany
+				    	</span>
+				    	
+				    	<br><br>
+
+				    	<span class="itemCost">
+				    		$19.99
+				    	</span>
+				    </div>
+				    <div class="likeButton broken"><img src="redHeart.png"></div>
+				    <div class="likeButton fixed"><img src="redHeart.png"></div>
+
+			    </div>
+			</div>
+ 			<div id="shoppingCartBox">
+				<div id="shoppingCartWindow" ng-app="quantChange">
+					<h1>Still a work in progress. But this is how it will look.</h1>
+					<div ng-controller="qc">{{totalcost}}</div>
+					
+					<div class='buySection' data-id="0" ng-controller='qc'>
+						<div class="buySectionImg">
+							<img class="picCart" src="fashion3.png">
+						</div>
+						<div class="buySectionDescrpt">
+							<div class="name">Hottest Trend by Brittany</div>
+							<br>
+							<div class="price">$19.99</div>
+							<br>
+							<br>
+							<span class="quant" style="color: white;">Qty: </span>
+							<img class="operator" src="minus.png" ng-click="changeQuantDown()">
+							<input ng-model="quant" type="text" id="text" name="text_name" style="width: 44px;" />
+							<img class="operator" src="plus.png" ng-click="changeQuantUp()">
+							<div class="update" ng-click="update()">Update</div>
+
+						</div>
+						<div class="buySectionTotalPrice">
+							<div class="shoppingCartCost">$19.99</div>
+						</div>
+					</div>
+					
+				</div>
+				<div id="exitShoppingCartWindow"></div>
+			</div> 
+
+	</container>
+
+	
+	
+
+		
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script  src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="app2.js"></script>
+</body>
+</html>
