@@ -6,7 +6,7 @@
 
 body {
 	margin:0; 
-	background-image: url("../img/backgrd.png");
+	background-image: url("backgrd.png");
 	/*background: linear-gradient(to top, white 0%, #FF8F8F);*/
 	background-attachment: fixed;
 	height: 100%;
