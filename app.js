@@ -420,7 +420,7 @@ $(document).ready( function () {
 
 
 		var populateShoppingCartHelper = function ( id, img, dscrpt) {
-		var populateShoppingCart = "<div class='buySection' data-id="+id+" "ng-controller='qc'">";
+		var populateShoppingCart = "<div class='buySection' data-id="+id+" ng-controller='qc'>";
 
 		populateShoppingCart += "<div class='buySectionImg'>";
 		populateShoppingCart += "<img class='picCart' src="+img+">";
@@ -432,10 +432,10 @@ $(document).ready( function () {
 		populateShoppingCart += "<br>";
 		populateShoppingCart += "<br>";
 		populateShoppingCart += "<span class='quant' style='color: white;'>Qty: </span>";
-		populateShoppingCart += "<img class='operator' src='minus.png' "ng-click='changeQuantDown()'">";
-		populateShoppingCart += "<input "ng-model='quant'" type='text' id='text' name='text_name' style='width: 44px;' />";
-		populateShoppingCart += "<img class='operator' src='plus.png' "ng-click='changeQuantUp()'">";
-		populateShoppingCart += "<div class='update' "ng-click='update()'">Update</div>";
+		populateShoppingCart += "<img class='operator' src='minus.png' ng-click='changeQuantDown()'>";
+		populateShoppingCart += "<input ng-model='quant' type='text' id='text' name='text_name' style='width: 44px;' />";
+		populateShoppingCart += "<img class='operator' src='plus.png' ng-click='changeQuantUp()'>";
+		populateShoppingCart += "<div class='update' ng-click='update()'>Update</div>";
 		populateShoppingCart += "</div>";
 		populateShoppingCart += "<div class='buySectionTotalPrice'>";
 		populateShoppingCart += "<span class='totalcompile'></span>";
